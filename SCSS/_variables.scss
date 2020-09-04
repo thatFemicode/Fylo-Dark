@@ -1,0 +1,23 @@
+$color-primary: (
+  "dark-blue-intro": hsl(217, 28%, 15%),
+  "dark-blue-main": hsl(218, 28%, 13%),
+  "dark-blue-footer": hsl(216, 53%, 9%),
+  "dark-blue-testimonial": hsl(219, 30%, 18%),
+);
+
+$color-accent: (
+  "cyan": hsl(176, 68%, 64%),
+  "blue": hsl(198, 60%, 50%),
+);
+
+$neutral: hsl(0, 0%, 100%);
+
+$website-width: 1440px;
+
+// $bg-dekstop: url("/img/bg-curvy-desktop.svg");
+// $bg-mobile: url("/img/bg-curvy-mobile.svg");
+
+$bg: (
+  "desktop": url("../img/bg-curvy-desktop.svg"),
+  "mobile": url("../img/bg-curvy-mobile.svg"),
+);

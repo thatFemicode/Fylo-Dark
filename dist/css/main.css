@@ -1,0 +1,312 @@
+.container {
+  width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+  max-width: 100%; }
+
+.btn-main {
+  display: inline-block;
+  padding: 1rem 6rem;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer; }
+
+.btn-main {
+  color: white;
+  background: linear-gradient(to right, #65e2d9, #339ecc); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #181f2a;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+li {
+  list-style: none; }
+
+ul {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.6;
+  font-family: "Raleway", sans-serif; }
+
+p {
+  font-family: "Raleway", sans-serif; }
+
+#header {
+  background-color: #1c2431;
+  background-image: url("../img/bg-curvy-desktop.svg");
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 80px; }
+  #header .main {
+    display: grid;
+    grid-template-columns: 1fr; }
+    #header .main .nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem; }
+      #header .main .nav-bar .hamburger {
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        outline: none;
+        display: none; }
+      #header .main .nav-bar .nav-list {
+        display: flex; }
+        #header .main .nav-bar .nav-list li {
+          padding: 0 1rem; }
+        #header .main .nav-bar .nav-list .nav-link {
+          text-transform: none;
+          text-transform: uppercase;
+          border-bottom: 2px transparent solid;
+          padding-bottom: 0.1rem;
+          transition: border-color 0.2s; }
+          #header .main .nav-bar .nav-list .nav-link:hover {
+            border-color: white; }
+          #header .main .nav-bar .nav-list .nav-link.current {
+            border-color: white; }
+    #header .main .content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      #header .main .content img {
+        max-width: 100%;
+        justify-content: center;
+        align-self: center; }
+      #header .main .content h1 {
+        align-self: center;
+        justify-self: center;
+        font-size: 2rem;
+        max-width: 60%;
+        color: white; }
+      #header .main .content p {
+        align-self: center;
+        justify-self: center;
+        max-width: 40%;
+        color: white;
+        margin-bottom: 1rem; }
+      #header .main .content .btn-main {
+        flex: 0.5;
+        align-self: center;
+        margin-top: 20px; }
+
+#features {
+  background-color: #181f2a; }
+  #features .main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    text-align: center;
+    color: white;
+    padding: 50px; }
+    #features .main .icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      flex-wrap: wrap; }
+      #features .main .icon img {
+        margin-bottom: 10px; }
+      #features .main .icon p {
+        max-width: 60%; }
+
+#productive {
+  background-color: #181f2a;
+  margin-top: 80px; }
+  #productive .main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3rem; }
+    #productive .main .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      max-width: 100%; }
+      #productive .main .image img {
+        display: flex;
+        align-self: center; }
+    #productive .main .text {
+      margin-top: 90px;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      color: white;
+      max-width: 100%; }
+      #productive .main .text h3 {
+        font-size: 3rem;
+        max-width: 70%; }
+      #productive .main .text-1 {
+        max-width: 80%;
+        margin: 20px 0; }
+      #productive .main .text-2 {
+        max-width: 80%; }
+      #productive .main .text .link {
+        margin-top: 20px;
+        position: relative;
+        border-bottom: 1px transparent solid;
+        color: #65e2d9;
+        border-color: inherit;
+        padding-right: 1.5rem;
+        width: 190px; }
+        #productive .main .text .link::after {
+          content: url(../img/icon-arrow.svg);
+          vertical-align: middle;
+          position: absolute;
+          margin-top: 5px;
+          margin-left: 5px; }
+
+#testimonials {
+  margin-top: 90px;
+  padding: 37px 0 70px 0; }
+  #testimonials .main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    position: relative;
+    color: white; }
+    #testimonials .main::before {
+      content: "";
+      background: url(../img/bg-quotes.png);
+      position: absolute;
+      background-size: 100%;
+      height: 30px;
+      display: block;
+      width: 30px;
+      height: 50px;
+      background-repeat: no-repeat;
+      margin-top: -10px; }
+    #testimonials .main .feedback {
+      background: #202a3c;
+      border-radius: 4px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); }
+      #testimonials .main .feedback .text {
+        margin-top: 10px; }
+      #testimonials .main .feedback .profile {
+        display: flex;
+        align-items: center;
+        margin-top: 20px; }
+        #testimonials .main .feedback .profile .information {
+          margin-left: 10px; }
+        #testimonials .main .feedback .profile .image {
+          width: 10%;
+          height: 100%;
+          border-radius: 50%; }
+
+#form {
+  background-color: #1c2431;
+  width: 800px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  padding: 40px;
+  border-radius: 6px;
+  z-index: 1;
+  top: 100px; }
+  #form .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    #form .main h2 {
+      font-size: 2rem;
+      margin-bottom: 10px; }
+    #form .main .form-control {
+      display: flex;
+      align-items: center;
+      max-width: 100%; }
+      #form .main .form-control input {
+        flex: 1;
+        width: 100%;
+        border-radius: 50px;
+        border: 0;
+        padding: 10px 0px;
+        margin-right: 10px;
+        height: 52px;
+        margin-top: 10px;
+        outline: none; }
+        #form .main .form-control input::placeholder {
+          color: #d3d2d2;
+          padding: 0 20px; }
+      #form .main .form-control .btn-alt {
+        flex: 1;
+        width: 200px;
+        height: 50px;
+        padding: 1rem 0.4rem;
+        margin-top: 10px; }
+
+#footer {
+  background-color: #0b1523; }
+
+@media screen and (max-width: 600px) {
+  #header {
+    background-color: #1c2431;
+    background-image: url("../img/bg-curvy-mobile.svg");
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom; }
+    #header .main .nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 100%; }
+      #header .main .nav-bar .hamburger {
+        display: block; }
+      #header .main .nav-bar .nav-list {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center; }
+        #header .main .nav-bar .nav-list li {
+          padding: 10px 0; }
+        #header .main .nav-bar .nav-list.show {
+          display: flex;
+          flex-direction: column; }
+    #header .main .content {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%; }
+      #header .main .content h1 {
+        width: 100%; }
+  #features .main {
+    align-items: center;
+    justify-content: center;
+    text-align: center; } }
